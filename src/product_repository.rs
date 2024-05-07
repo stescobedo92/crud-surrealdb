@@ -36,7 +36,7 @@ impl ProductRepository {
         );
         Err(error)
     }
-    pub async fn create_product(&self, id: String, content: Product) -> Result<Vec<Product>, Error> {
+    pub async fn create_product(&self, content: Product) -> Result<Vec<Product>, Error> {
         let records = self.db.create(&self.table).content(content).await?;
 
         Ok(records)
