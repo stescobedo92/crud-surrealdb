@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+surrealdb = "1.4.2"
+serde = "1.0.200"
+tokio = { version = "1.37.0", features = ["full"] }
